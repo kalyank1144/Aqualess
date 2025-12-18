@@ -13,6 +13,9 @@ const HeroSection = dynamic(() => import("@/components/HeroSection"), {
   loading: () => <div style={{ height: '100vh', background: '#0a0e27' }} />
 });
 
+// Disable static generation for this page
+export const dynamic = 'force-dynamic';
+
 export default function Home() {
   return (
     <main style={{ minHeight: '100vh', position: 'relative' }}>
